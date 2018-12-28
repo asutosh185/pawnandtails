@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ partial "meta" . }}
+        <title>{{ .Title }}</title>
+        {{ partial "styles" }}
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
+        {{ partial "nav" }}
+        {{ partial "aboutus" }}
+        {{ partial "team" }}
+        {{ partial "drquote" }}
+     
+        {{ partial "certificate" . }}
+        {{ partial "footer" }}
+        {{ partial "scripts" }}
+        {{ partial "ga" . }}
+    </body>
+</html>

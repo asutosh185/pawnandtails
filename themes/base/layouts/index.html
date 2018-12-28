@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {{ partial "meta" . }}
+    <title>{{ .Title }}</title>
+    
+    {{ partial "styles" }}
+</head>
+   
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
+
+{{ partial "preloader" }}
+    {{ partial "header" }}
+    {{ partial "navbar" }}
+    {{ partial "whoarewe" }}
+     {{ partial "reviews" }}
+    {{ partial "services" }}
+    {{ partial "quote" }}
+    {{ partial "our_work" }}
+    {{ partial "funfact" }}
+    {{ partial "ourmainskills" }}
+    <!-- {{ partial "contact" }} -->
+    {{ partial "contactus" }}
+    {{ partial "map" }}
+    {{ partial "footer" }}
+    {{ partial "scripts" }}
+    {{ partial "ga" . }}
+</body>
+</html>

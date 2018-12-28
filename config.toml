@@ -1,0 +1,7 @@
+baseURL = "https://pawsandtailsvizag.in"
+languageCode = "en-us"
+title = "Paws N Tails"
+theme = "base"
+[params]
+ga_id = "UA-120611372-1"
+description = "Your pets health and wellbeing is very important to us and we take every possible measure to give your animals the care they deserve."

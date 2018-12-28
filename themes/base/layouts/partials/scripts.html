@@ -1,0 +1,42 @@
+<script src="/assets/plugins/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
+    <script src="/assets/plugins/smartresize/smartresize.js"></script>
+    <script src="/assets/plugins/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/jquery-sticky/jquery.sticky.js"></script>
+    <script src="/assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+    <script src="/assets/plugins/jquery-countTo/jquery.countTo.js"></script>
+    <!-- <script src="/assets/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script> -->
+    <!-- <script src="/assets/plugins/jquery-countdown/jquery.countdown.min.js"></script> -->
+    <script src="/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="/assets/plugins/jquery-magnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/plugins/jquery-validation/jquery.validate.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Map JS -->
+    <script src="/assets/js/component/map.js"></script>
+    <script src="/assets/js/googleplace.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD4-MGetXDpTUYXYhTftcnowM93gnxz4yo&signed_in=true&libraries=places"></script>
+
+<script>
+jQuery(document).ready(function( $ ) {
+   $("#google-reviews").googlePlaces({
+        placeId: 'ChIJy2f70KdEOToRnHBOF15smb4' //Find placeID @: https://developers.google.com/places/place-id
+      , render: ['reviews']
+      , min_rating: 4.5
+      , max_rows:4
+   });
+
+});
+</script>
+<script>
+   $(window).load(function(){
+      $.magnificPopup.open({
+         items: { src: 'assets/img/event.jpg'},
+         type: 'image'
+      });
+   });
+</script>

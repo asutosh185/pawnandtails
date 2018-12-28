@@ -1,0 +1,161 @@
+.highlight{font-weight:700;}
+.items li{font-size:17px;margin:5px;text-align:left;}
+#ff h2{margin:8% 0%;}
+@media (min-width:992px)
+.navbar.navbar-fixed-top .navbar-nav>li.active a, .navbar.navbar-fixed-top .navbar-nav>li.active a:hover{color:#fff;background-color:#1abc9c !important;background-repeat:repeat;}
+.test{margin-top:5%;}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute;top:0;left:0;z-index:9999;overflow:hidden;-webkit-transform:translate3d(0,0,0);}
+#cboxWrapper{max-width:none;}
+#cboxOverlay{position:fixed;width:100%;height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;-webkit-overflow-scrolling:touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left;margin:auto;border:0;display:block;max-width:none;-ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%;height:100%;display:block;border:0;padding:0;margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;}
+#cboxOverlay{background:url(/assets/img/overlay.png) repeat 0 0;opacity:0.5 !important;}
+.pop{background-color:#ffeded!important;}
+.pop ul > li{list-style-type:none;text-align:left;font-weight:700 !important;}
+.pop h4{text-align:center;text-transform:uppercase;color:#fff;font-weight:700;}
+legend{font-size:19px;color:#000 !important;font-weight:700;}
+label{font-size:18px;}
+#colorbox{outline:0;}
+#cboxTopLeft{width:21px;height:21px;background:url(/assets/img/controls.png) no-repeat -101px 0;}
+#cboxTopRight{width:21px;height:21px;background:url(/assets/img/controls.png) no-repeat -130px 0;}
+#cboxBottomLeft{width:21px;height:21px;background:url(/assets/img/controls.png) no-repeat -101px -29px;}
+#cboxBottomRight{width:21px;height:21px;background:url(/assets/img/controls.png) no-repeat -130px -29px;}
+#cboxMiddleLeft{width:21px;background:url(/assets/img/controls.png) left top repeat-y;}
+#cboxMiddleRight{width:21px;background:url(/assets/img/controls.png) right top repeat-y;}
+#cboxTopCenter{height:21px;background:url(/assets/img/border.png) 0 0 repeat-x;}
+#cboxBottomCenter{height:21px;background:url(/assets/img/border.png) 0 -29px repeat-x;}
+#cboxContent{background:#fff;overflow:hidden;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px;border:1px solid #ccc;}
+#cboxLoadedContent{margin-bottom:28px;}
+#cboxTitle{position:absolute;bottom:4px;left:0;text-align:center;width:100%;color:#949494;}
+#cboxCurrent{position:absolute;bottom:4px;left:58px;color:#949494;}
+#cboxLoadingOverlay{background:url(/assets/img/loading_background.png) no-repeat center center;}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose{border:0;padding:0;margin:0;overflow:visible;width:auto;background:none;}
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active{outline:0;}
+#cboxSlideshow{position:absolute;bottom:4px;right:30px;color:#0092ef;}
+#cboxPrevious{position:absolute;bottom:0;left:0;background:url(/assets/img/controls.png) no-repeat -75px 0;width:25px;height:25px;text-indent:-9999px;}
+#cboxPrevious:hover{background-position:-75px -25px;}
+#cboxNext{position:absolute;bottom:0;left:27px;background:url(/assets/img/controls.png) no-repeat -50px 0;width:25px;height:25px;text-indent:-9999px;}
+#cboxNext:hover{background-position:-50px -25px;}
+#cboxClose{position:absolute;bottom:0;right:0;background:url(/assets/img/controls.png) no-repeat -25px 0;width:25px;height:25px;text-indent:-9999px;}
+#cboxClose:hover{background-position:-25px -25px;}
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);}
+#map-plug {display:none;}
+
+#google-reviews {
+display:flex;
+flex-wrap:wrap;
+//display: grid;
+//grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
+position: relative;
+}
+
+.review-item {
+margin:0 auto;
+padding:1em;
+
+font-family:'Lato', sans-serif;
+}
+
+@media ( max-width:1200px) {
+  .review-item { flex: 1 1 40%; }
+}
+
+@media ( max-width:450px) {
+  .review-item { flex: 1 1 90%; }
+}
+
+.review-meta, .review-stars {text-align:center; font-size:115%;}
+.review-author { text-transform: capitalize; font-weight:100;color: #fff; }
+.review-date {font-size:20px;display:block;font-weight:600;color: #71cece;}
+.review-text {height: 260px;border: 1px dashed #f16334;padding: 15px;line-height:1.55;text-align:left; margin:20px auto;color: #fff;font-size: 16px;}
+.review-text:before {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left-style: inset;
+    border-right-style: inset;
+    border-bottom: 22px solid;
+    border-left: 22px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom-color: #D35700;
+    left: 40%;
+    top: -38px;
+}
+ .reviews-more a{
+  color: #cecece;
+  float: right;
+  font-style: italic;
+ }
+
+.review-stars ul {
+display: inline-block;
+list-style: none;
+margin:0; padding:0;
+
+}
+
+.review-stars ul li {
+float: left;
+margin-right: 1px;
+line-height:1;
+}
+
+.review-stars ul li i {
+     color: orange;
+  font-size: 1.4em;
+  font-style:normal;
+}
+.review-stars ul li i.inactive { color: #c6c6c6;}
+.star:after { content: "\2605"; }
+
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+#certificate button.close{
+  font-size: 40px;
+  color: #fff;
+  opacity: 1;
+}
+#certificate button.close:hover{
+  color: #fff;
+  opacity: 0.8;
+}
+#intro .intro-body button.close{
+  font-size: 40px;
+  color: #fff!important;
+  opacity: 1;
+}
+#intro .intro-body button.close:hover{
+  color: #fff;
+  opacity: 0.8;
+}
+.item .img-size{
+  width: 250px;
+  height: 250px;
+}
+.item .img-buttom{
+  margin-left: 30%;
+  margin-top: -15%;
+}
